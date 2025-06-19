@@ -38,9 +38,9 @@ void display(node* head) {
 }
 
 void deleteAtHead(node* &head) {
-    node* temp = head;
+    node* todelete = head;
     head = head->next;
-    delete temp;
+    delete todelete;
 }
 
 void deletion(node* &head, int val) {

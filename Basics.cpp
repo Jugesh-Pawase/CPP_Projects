@@ -1,5 +1,5 @@
-/**
-//Check wether given number is armstrong or not
+/*
+//Problem 1: Check if Number is Armstrong
 #include <bits/stdc++.h> 
 #include <cmath>
 bool isArmstrong(int num) {
@@ -23,7 +23,8 @@ bool isArmstrong(int num) {
     }
 }
 
-//factorial
+/*
+//Problem 2: Factorial using Loop
 void factorial(int n)
 {
     unsigned long long fact = 1;
@@ -32,23 +33,10 @@ void factorial(int n)
     }
     cout << fact << endl;
 }
-/** 
-//Factorial of a given number
 
+/*
+//Problem 3: Factorial using Recursion
 #include<stdio.h>
-int factorial(int num);
-
-int main()
-{
-    int num;
-    printf("Enter the number:");
-    scanf("%d", &num);
-
-    printf("Factorial of %d is %d\n", num, factorial(num));
-
-    return 0;
-}
-
 int factorial(int num)
 {
     if(num == 0)
@@ -62,10 +50,22 @@ int factorial(int num)
     else
     {
         return num*factorial(num-1);
+    }
 }
+
+int main()
+{
+    int num;
+    printf("Enter the number:");
+    scanf("%d", &num);
+
+    printf("Factorial of %d is %d\n", num, factorial(num));
+
+    return 0;
 }
+
 /*
-//Check wether given number is palindrome or not
+//Problem 4: Check if Number is Palindrome
 class Solution {
     public:
         bool isPalindrome(int x) {
@@ -88,8 +88,9 @@ class Solution {
             }
         }
     };
+
 /*
-//Half pyramid of numbers
+//Problem 5: Half Pyramid using Numbers
 #include<stdio.h>
 int main()
 {
@@ -107,9 +108,9 @@ int main()
 
     return 0;
 }
-/*
-// Half pyramid of star
 
+/*
+//Problem 6: Half Pyramid using Stars
 #include <stdio.h>
 int main()
 {
@@ -126,9 +127,9 @@ int main()
     }
     return 0;
 }
-/*
-//Fibonacci series using recursion
 
+/*
+//Problem 7: Fibonacci Series using Recursion
 #include<stdio.h>
 int fibonacci(int num)
 {
